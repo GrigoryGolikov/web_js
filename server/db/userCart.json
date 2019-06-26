@@ -1,0 +1,34 @@
+{
+    "amount": 46600,
+    "countGoods": 2,
+    "contents": [
+        {
+            "quantity": 11,
+            "id_product": 1003,
+            "product_name": "jacket",
+            "price": 5600,
+            "img": "img/product3.jpg"
+        },
+        {
+            "quantity": 4,
+            "id_product": 1002,
+            "product_name": "t-shirt red",
+            "price": 2300,
+            "img": "img/product2.jpg"
+        },
+        {
+            "quantity": 5,
+            "id_product": 1001,
+            "product_name": "t-shirt",
+            "price": 1600,
+            "img": "img/product1.jpg"
+        },
+        {
+            "quantity": 7,
+            "id_product": 1007,
+            "product_name": "pants",
+            "price": 3200,
+            "img": "img/product7.jpg"
+        }
+    ]
+}

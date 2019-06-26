@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Products</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_sass.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="app">
+
+        <header class="header">
+            <div class="container header-flex">
+                <div class="header__left">
+                    <a class="logo" href="index.html"><img class="logo_img" src="img/logo.png" alt="logo">
+                        <p class="brand_text">BRAN<span class="d_pink">D</span></p>
+                    </a>
+                    <form class="header_form" action="#">
+                        <div class="browse">Browse <i class="fas fa-caret-down"></i>
+                            <nav-browse></nav-browse> 
+                        </div>
+                        <filter-products></filter-products>
+                    </form>
+                </div>
+
+                <div class="header__right">
+                    <div class="cart-linc-box">
+                        <div class="drop-cart">
+                            <cart ref="cart"></cart>
+                        </div>
+                        <a href="ShoppingCart.html" class="cart-linc"><img class="header-cart" src="img/cart.svg"
+                                alt="cart"> </a>
+                        <cart-counter></cart-counter>
+
+                    </div>
+                    <div class="button_pinc button_up"> My Account <i class="fas fa-caret-down"></i>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav>
+            <nav-menu ref="nav-menu"> <nav-menu>
+        </nav>
+        <div class="promo-produkts">
+            <div class="container promo-produkts-flex">
+                <div class="promo-produkts-left">New Arrivals </div>
+                <div class="promo-produkts-right"><a href="index.html" class="promo-produkts-right">Home</a> / <a
+                        href="#" class="promo-produkts-right">Men</a> / <span class="promo-produkts-right-pink">New
+                        Arrivals</span> </div>
+            </div>
+        </div>
+
+        <div class="container catalog-flex">
+            <div class="sidebar">
+                <input type="checkbox" id="hd-1" class="hide" />
+                <label for="hd-1" class="hide-sidebar">
+                    <p>Category</p><i class="fas fa-caret-down"></i>
+                </label>
+                <div class="sidebar__box">
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Accessories</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Bags</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Denim</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Hoodies & Sweatshirts</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Jackets & Coats</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Pants</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Polos</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Shirts</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Shoes</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Shorts</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Sweaters & Knits</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">T-Shirts</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Tanks</a>
+                    </li>
+                </div>
+
+                <input type="checkbox" id="hd-2" class="hide" />
+                <label for="hd-2" class="hide-sidebar">
+                    <p>BRAND</p><i class="fas fa-caret-down"></i>
+                </label>
+                <div class="sidebar__box">
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Accessories</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Bags</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Denim</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Hoodies & Sweatshirts</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Jackets & Coats</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Pants</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Polos</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Shirts</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Shoes</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Shorts</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Sweaters & Knits</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">T-Shirts</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Tanks</a>
+                    </li>
+                </div>
+
+                <input type="checkbox" id="hd-3" class="hide" />
+                <label for="hd-3" class="hide-sidebar">
+                    <p>DESIGNER</p><i class="fas fa-caret-down"></i>
+                </label>
+                <div class="sidebar__box">
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Accessories</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Bags</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Denim</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Hoodies & Sweatshirts</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Jackets & Coats</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Pants</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Polos</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Shirts</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Shoes</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Shorts</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Sweaters & Knits</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">T-Shirts</a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="#" class="sidebar-link">Tanks</a>
+                    </li>
+                </div>
+            </div>
+            <section class="catalog-box">
+                <div class="filter_top">
+                    <div class="filter">
+                        <h3 class="filter-h">Trending now</h3>
+                        <div class="trending-flex">
+                            <a class="trending-linc" href="#">Bohemian</a>
+                            <p class="trending-text">|</p>
+                            <a class="trending-linc" href="#">Floral</a>
+                            <p class="trending-text">|</p>
+                            <a class="trending-linc" href="#">Lace</a>
+                        </div>
+                        <div class="trending-flex">
+                            <a class="trending-linc" href="#">Floral</a>
+                            <p class="trending-text">|</p>
+                            <a class="trending-linc" href="#">Lace</a>
+                            <p class="trending-text">|</p>
+                            <a class="trending-linc" href="#">Bohemian</a>
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <h3 class="filter-h">Size</h3>
+                        <div class="size-flex">
+                            <div class="size-box"> <label for="size-xxs" class="label-size">
+                                    <input id="size-xxs" type="checkbox" class="input-size"> XXS</label></div>
+                            <div class="size-box"> <label for="size-xs" class="label-size">
+                                    <input id="size-xs" type="checkbox" class="input-size"> XS</label>
+                            </div>
+                            <div class="size-box"> <label for="size-s" class="label-size">
+                                    <input id="size-s" type="checkbox" class="input-size"> S</label>
+                            </div>
+                            <div class="size-box"> <label for="size-m" class="label-size">
+                                    <input id="size-m" type="checkbox" class="input-size"> M</label>
+                            </div>
+                            <div class="size-box"> <label for="size-l" class="label-size">
+                                    <input id="size-l" type="checkbox" class="input-size"> L</label>
+                            </div>
+                            <div class="size-box"> <label for="size-xl" class="label-size">
+                                    <input id="size-xl" type="checkbox" class="input-size"> XL</label>
+                            </div>
+                            <div class="size-box"> <label for="size-xxl" class="label-size">
+                                    <input id="size-xxl" type="checkbox" class="input-size"> XXL</label></div>
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <h3 class="filter-h">Price</h3>
+                        <div class="price-box">
+                            <form oninput="result.value=(range.value)" action="#">
+                                <label for="range"></label>
+                                <input id="range" type="range" value="1000" step="0.1" />
+                                <br>
+
+                                <output name="result" for="range">1000</output>
+
+                            </form>
+                        </div>
+                    </div>
+                    <div class="sort-box">
+                        <label for="gender" class="sort-name">Sort By</label>
+                        <div class="sort-box-select">
+                            <select id="gender" class="sort-select">
+                                <option value="name">Name</option>
+                                <option value="price">Price</option>
+                                <option value="new">New</option>
+                            </select>
+                        </div>
+                        <label for="gender" class="sort-name">Show</label>
+                        <div class="sort-box-select">
+                            <select id="gender" class="sort-select">
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <products ref="products" :amount = 9></products>
+
+            </section>
+        </div>
+        <div class="container under_catalog">
+
+            <div class="nav-product">
+                <ul class="menu-nav-product">
+                    <li><a href="#" class="nav-number"><i class="fas fa-angle-left"></i></a></li>
+                    <li><a href="#" class="nav-number">1 </a></li>
+                    <li><a href="#" class="nav-number">2 </a></li>
+                    <li><a href="#" class="nav-number">3 </a></li>
+                    <li><a href="#" class="nav-number">4 </a></li>
+                    <li><a href="#" class="nav-number">5 </a></li>
+                    <li><a href="#" class="nav-number">6 </a></li>
+                    <li><a href="#" class="nav-number">20</a></li>
+                    <li><a href="#" class="nav-number"><i class="fas fa-angle-right"></i></a></li>
+                </ul>
+
+            </div>
+            <a href="products.html"><div class="button_white">View All</div></a>
+            
+        </div>
+        <div class="services">
+            <div class="container services-flex">
+                <article class="offer-list text-alig-center">
+
+                    <div class="offer-img-box">
+                        <a class="offer-link" href="#"><img src="img/auto.png"></a>
+                    </div>
+                    <a href="#">
+                        <h2 class="offer-h2-product">Free Delivery</h2>
+                    </a>
+                    <p class="offer-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                        with extensive models.</p>
+
+                </article>
+                <article class="offer-list text-alig-center">
+                    <div class="offer-img-box">
+                        <a class="offer-link" href="#"><img src="img/percent.png"></a>
+                    </div>
+                    <a href="#">
+                        <h2 class="offer-h2-product">Sales & discounts</h2>
+                    </a>
+                    <p class="offer-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                        with extensive models.</p>
+
+                </article>
+                <article class="offer-list text-alig-center">
+                    <div class="offer-img-box">
+                        <a class="offer-link" href="#"><img src="img/crown.png"></a>
+                    </div>
+                    <a href="#">
+                        <h2 class="offer-h2-product">Quality assurance</h2>
+                    </a>
+                    <p class="offer-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                        with extensive models.</p>
+
+                </article>
+            </div>
+        </div>
+        <div class="subscribe-box">
+            <div class="subscribe">
+                <div class="container subscribe-flex">
+                    <div class="subscribe-left">
+                        <figure class="quote">
+                            <div class="quote-img-box">
+                                <img src="img/quote.png" alt="quote" class="quote-img">
+                            </div>
+                            <div class="quote-next-box">
+                                <p class="quote-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                                    pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                                <p class="quote-name-pink">Bin Burhan</p>
+                                <p class="quote-name">Dhaka, Bd</p>
+                            </div>
+
+                        </figure>
+                        <div class="line">
+                            <a class="line-link" href="#"><img src="img/line1.svg" alt="line"></a>
+                            <a class="line-link" href="#"><img src="img/line2.svg" alt="line"></a>
+                            <a class="line-link" href="#"><img src="img/line1.svg" alt="line"></a>
+                        </div>
+                    </div>
+
+                    <div class="subscribe-right">
+                        <div class="quote-name-text">
+                            <p class="quote-name-up">Subscribe</p>
+                            <p class="quote-name-d">FOR OUR NEWLETTER AND PROMOTION</p>
+                        </div>
+                        <form class="quote-box">
+                            <input id="email" class="quote-input" type="email" placeholder="Enter Your Email">
+                            <button class="quote-submit" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="under">
+            <div class="container under-flex">
+                <div class="under-left">
+                    <a class="logo " href="#"><img class="logo_img" src="img/logo.png" alt="logo">
+                        <p class="brand_text">BRAN<span class="d_pink">D</span></p>
+                    </a>
+                    <div class="under-text-box">
+                        <p class="under-text">Objectively transition extensive data rather than cross functional
+                            solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits.
+                            Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
+                        </p>
+                        <p class="under-text">Efficiently plagiarize 24/365 action items and focused infomediaries.
+                            Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                        </p>
+                    </div>
+                </div>
+                <div class="under_right">
+                    <nav class="under-nav-box">
+                        <h2 class="under-nav-h2 pink">COMPANY</h2>
+                        <ul class="under-menu">
+                            <li class="under-menu--list"><a href="#" class="under-menu--link">Home</a></li>
+                            <li class="under-menu--list"><a href="#" class="under-menu--link">Shop</a></li>
+                            <li class="under-menu--list"><a href="#" class="under-menu--link">About</a></li>
+                            <li class="under-menu--list"><a href="#" class="under-menu--link">How It Works</a></li>
+                            <li class="under-menu--list"><a href="#" class="under-menu--link">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="under-nav-box">
+                        <h2 class="under-nav-h2 pink">INFORMATION</h2>
+                        <ul class="under-menu">
+                            <li class="under-menu--list"><a href="#" class="under-menu--link">Tearms & Condition</a>
+                            </li>
+                            <li class="under-menu--list"><a href="#" class="under-menu--link">Privacy Policy</a></li>
+                            <li class="under-menu--list"><a href="#" class="under-menu--link">How to Buy</a></li>
+                            <li class="under-menu--list"><a href="#" class="under-menu--link">How to Sell</a></li>
+                            <li class="under-menu--list"><a href="#" class="under-menu--link">Promotion</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="under-nav-box">
+                        <h2 class="under-nav-h2 pink">SHOP CATEGORY</h2>
+                        <ul class="under-menu">
+                            <li class="under-menu--list"><a href="#" class="under-menu--link">Men</a></li>
+                            <li class="under-menu--list"><a href="#" class="under-menu--link">Women</a></li>
+                            <li class="under-menu--list"><a href="#" class="under-menu--link">Child</a></li>
+                            <li class="under-menu--list"><a href="#" class="under-menu--link">Apperal</a></li>
+                            <li class="under-menu--list"><a href="#" class="under-menu--link">Brows All</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+
+        <footer class="underground">
+            <div class="container underground-flex">
+                <div class="underground-left">
+                    <p class="underground-text">© 2017 Brand All Rights Reserved.</p>
+                </div>
+                <div class="underground-right">
+                    <a class="network" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="network" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="network" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="network" href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a class="network" href="#"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script defer src="js/main.js"></script>
+    <script src="js/cartComponent.js"></script>
+    <script src="js/productsComponent.js"></script>
+    <script src="js/filterComponent.js"></script>
+    <script src="js/errorComponent.js"></script>
+    <script src="js/menuComponent.js"></script>
+</body>
+
+</html>

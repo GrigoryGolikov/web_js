@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>ShoppingCart</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_sass.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="app">
+
+        <header class="header">
+            <div class="container header-flex">
+                <div class="header__left">
+                    <a class="logo" href="index.html"><img class="logo_img" src="img/logo.png" alt="logo">
+                        <p class="brand_text">BRAN<span class="d_pink">D</span></p>
+                    </a>
+                    <form class="header_form" action="#">
+                        <div class="browse">Browse <i class="fas fa-caret-down"></i>
+                            <nav-browse></nav-browse> 
+                        </div>
+                        <input class="header-left-input" type="text" placeholder="Search for Item...">
+                        <button class="header-left-submit" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+
+                <div class="header__right">
+                    <div class="cart-linc-box">
+                        <div class="drop-cart">
+                            <cart ref="cart"></cart>
+                        </div>
+                        <a href="ShoppingCart.html" class="cart-linc"><img class="header-cart" src="img/cart.svg"
+                                alt="cart"> </a>
+                        <cart-counter></cart-counter>
+
+                    </div>
+                    <div class="button_pinc button_up"> My Account <i class="fas fa-caret-down"></i>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav>
+            <nav-menu ref="nav-menu"> <nav-menu>  
+        </nav>
+        <div class="promo-produkts">
+            <div class="container promo-produkts-flex">
+                <div class="promo-produkts-left">New Arrivals </div>
+                <div class="promo-produkts-right"><a href="index.html" class="promo-produkts-right">Home</a> / <a
+                        href="#" class="promo-produkts-right">Men</a> / <span class="promo-produkts-right-pink">New
+                        Arrivals</span>
+                </div>
+            </div>
+        </div>
+        <div class="container products-cart">
+            <div class="products-cart-head">
+                <div class="products-cart-left">
+                    <div class="products-cart-h2">Product Details</div>
+                </div>
+                <div class="products-cart-right">
+                    <div class="products-cart-h2 products-cart-width">unite Price</div>
+                    <div class="products-cart-h2 products-cart-width">Quantity</div>
+                    <div class="products-cart-h2 products-cart-width">shipping</div>
+                    <div class="products-cart-h2 products-cart-width">Subtotal</div>
+                    <div class="products-cart-h2 products-cart-width">ACTION</div>
+                </div>
+            </div>
+            <cart-page ref="cartPage"></cart-page>
+
+        </div>
+        <div class="container under_products-cart">
+            <div class="under_products-cart-button">CLEAR SHOPPING CART</div>
+            <div class="under_products-cart-button">CONTINUE sHOPPING</div>
+        </div>
+        <div class="checkout">
+
+            <div class="container ">
+                <div class="checkout-top checkout-flex">
+                    <div class="adress">
+                        <h3 class="checkout-h3">Shipping Adress</h3>
+                        <div class="checkout-select-box">
+                            <select id="gender" class="checkout-select">
+                                <option value="02">USA</option>
+                                <option value="03">Russia</option>
+                                <option value="04">Bangladesh</option>
+                                <option value="05">Italy</option>
+                            </select>
+                        </div>
+                        <input type="text" class="checkout-input" placeholder="State">
+                        <input type="text" class="checkout-input" placeholder="Postcode / Zip">
+
+
+
+                    </div>
+                    <div class="coupon">
+                        <h3 class="checkout-h3">coupon discount</h3>
+                        <p class="checkout-p">Enter your coupon code if you have one</p>
+                        <input type="text" class="checkout-input" placeholder="State">
+                        <div class="checkout-button">Apply coupon</div>
+                    </div>
+                    <div class="sending">
+                        <div class="sending-box">
+                            <div class="total-box">
+                                <p class="sending-subtotal-text">Sub total <sub-total></sub-total>
+                                </p>
+
+                                <p class="sending-grand-text">GRAND TOTAL <grand-total></grand-total>
+                                </p>
+
+                            </div>
+                            <a href="checkout.html">
+                                <div class="sending-button">proceed to checkout</div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="checkout-Up">
+                    <div class="checkout-button">get a quote</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="subscribe-box">
+            <div class="subscribe">
+                <div class="container subscribe-flex">
+                    <div class="subscribe-left">
+                        <figure class="quote">
+                            <div class="quote-img-box">
+                                <img src="img/quote.png" alt="quote" class="quote-img">
+                            </div>
+                            <div class="quote-next-box">
+                                <p class="quote-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                                    pulvinar
+                                    purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                                <p class="quote-name-pink">Bin Burhan</p>
+                                <p class="quote-name">Dhaka, Bd</p>
+                            </div>
+
+                        </figure>
+                        <div class="line">
+                            <a class="line-link" href="#"><img src="img/line1.svg" alt="line"></a>
+                            <a class="line-link" href="#"><img src="img/line2.svg" alt="line"></a>
+                            <a class="line-link" href="#"><img src="img/line1.svg" alt="line"></a>
+                        </div>
+                    </div>
+
+                    <div class="subscribe-right">
+                        <div class="quote-name-text">
+                            <p class="quote-name-up">Subscribe</p>
+                            <p class="quote-name-d">FOR OUR NEWLETTER AND PROMOTION</p>
+                        </div>
+                        <form class="quote-box">
+                            <input id="email" class="quote-input" type="email" placeholder="Enter Your Email">
+                            <button class="quote-submit" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <footer class="under">
+            <div class="container under-flex">
+                <div class="under-left">
+                    <a class="logo " href="#"><img class="logo_img" src="img/logo.png" alt="logo">
+                        <p class="brand_text">BRAN<span class="d_pink">D</span></p>
+                    </a>
+                    <div class="under-text-box">
+                        <p class="under-text">Objectively transition extensive data rather than cross functional
+                            solutions.
+                            Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly
+                            syndicate an expanded array of processes and cross-unit partnerships.
+                        </p>
+                        <p class="under-text">Efficiently plagiarize 24/365 action items and focused infomediaries.
+                            Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                        </p>
+                    </div>
+                </div>
+                <div class="under_right">
+                    <nav class="under-nav-box">
+                        <h2 class="under-nav-h2 pink">COMPANY</h2>
+                        <ul class="under-menu">
+                            <li class="under-menu--list"><a href="index.html" class="under-menu--link">Home</a></li>
+                            <li class="under-menu--list"><a href="#" class="under-menu--link">Shop</a></li>
+                            <li class="under-menu--list"><a href="#" class="under-menu--link">About</a></li>
+                            <li class="under-menu--list"><a href="#" class="under-menu--link">How It Works</a></li>
+                            <li class="under-menu--list"><a href="#" class="under-menu--link">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="under-nav-box">
+                        <h2 class="under-nav-h2 pink">INFORMATION</h2>
+                        <ul class="under-menu">
+                            <li class="under-menu--list"><a href="#" class="under-menu--link">Tearms & Condition</a>
+                            </li>
+                            <li class="under-menu--list"><a href="#" class="under-menu--link">Privacy Policy</a></li>
+                            <li class="under-menu--list"><a href="#" class="under-menu--link">How to Buy</a></li>
+                            <li class="under-menu--list"><a href="#" class="under-menu--link">How to Sell</a></li>
+                            <li class="under-menu--list"><a href="#" class="under-menu--link">Promotion</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="under-nav-box">
+                        <h2 class="under-nav-h2 pink">SHOP CATEGORY</h2>
+                        <ul class="under-menu">
+                            <li class="under-menu--list"><a href="#" class="under-menu--link">Men</a></li>
+                            <li class="under-menu--list"><a href="#" class="under-menu--link">Women</a></li>
+                            <li class="under-menu--list"><a href="#" class="under-menu--link">Child</a></li>
+                            <li class="under-menu--list"><a href="#" class="under-menu--link">Apperal</a></li>
+                            <li class="under-menu--list"><a href="#" class="under-menu--link">Brows All</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+        <footer class="underground">
+            <div class="container underground-flex">
+                <div class="underground-left">
+                    <p class="underground-text">© 2017 Brand All Rights Reserved.</p>
+                </div>
+                <div class="underground-right">
+                    <a class="network" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="network" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="network" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="network" href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a class="network" href="#"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script defer src="js/main.js"></script>
+    <script src="js/cartComponent.js"></script>
+    <script src="js/cartPageComponent.js"></script>
+    <script src="js/productsComponent.js"></script>
+    <script src="js/filterComponent.js"></script>
+    <script src="js/errorComponent.js"></script>
+    <script src="js/menuComponent.js"></script>
+
+</body>
+
+</html>
