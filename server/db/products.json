@@ -1,0 +1,106 @@
+[
+  {
+    "id_product": 1001,
+    "product_name": "t-shirt",
+    "price": 1600,
+    "img": "img/product1.jpg"
+  },
+  {
+    "id_product": 1002,
+    "product_name": "t-shirt red",
+    "price": 2300,
+    "img": "img/product2.jpg"
+  },
+  {
+    "id_product": 1003,
+    "product_name": "jacket",
+    "price": 5600,
+    "img": "img/product3.jpg"
+  },
+  {
+    "id_product": 1004,
+    "product_name": "dress",
+    "price": 3300,
+    "img": "img/product4.jpg"
+  },
+  {
+    "id_product": 1005,
+    "product_name": "striped dress",
+    "price": 4000,
+    "img": "img/product5.jpg"
+  },
+  {
+    "id_product": 1006,
+    "product_name": "blazer",
+    "price": 4500,
+    "img": "img/product6.jpg"
+  },
+ {
+  "id_product": 1007,
+  "product_name": "pants",
+  "price": 3200,
+  "img": "img/product7.jpg"
+},
+{
+  "id_product": 1008,
+  "product_name": "shorts",
+  "price": 2900,
+  "img": "img/product8.jpg"
+},
+{
+  "id_product": 1009,
+  "product_name": "shorts",
+  "price": 2900,
+  "img": "img/product9.jpg"
+},
+{
+  "id_product": 1010,
+  "product_name": "shorts",
+  "price": 2900,
+  "img": "img/product10.jpg"
+},
+{
+  "id_product": 1011,
+  "product_name": "shorts",
+  "price": 2900,
+  "img": "img/product11.jpg"
+},
+{
+  "id_product": 1012,
+  "product_name": "shorts",
+  "price": 2900,
+  "img": "img/product12.jpg"
+},
+{
+  "id_product": 1013,
+  "product_name": "shorts",
+  "price": 2900,
+  "img": "img/product13.jpg"
+},
+{
+  "id_product": 1014,
+  "product_name": "shorts",
+  "price": 2900,
+  "img": "img/product14.jpg"
+},
+{
+  "id_product": 1015,
+  "product_name": "shorts",
+  "price": 2900,
+  "img": "img/product15.jpg"
+},
+{
+  "id_product": 1016,
+  "product_name": "shorts",
+  "price": 2900,
+  "img": "img/product16.jpg"
+},
+{
+  "id_product": 1017,
+  "product_name": "shorts",
+  "price": 2900,
+  "img": "img/product17.jpg"
+}
+
+
+]
